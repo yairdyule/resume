@@ -6,7 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{tgpagella}
 \usepackage{multicol}
-% \usepackage{graphicx}
+\usepackage{setspace}
 \usepackage{graphbox} %loads graphicx package
 \graphicspath{ {./} }
 
@@ -16,28 +16,108 @@
 % no pg numbers
 \thispagestyle{empty}
     
-\begin{center}
-  {\Large \textbf{Jared Jewell}}
+% \begin{center}
+%   {\Large \textbf{Jared Jewell}}
+%
+%   \vspace{1mm}
+%
+%   Boulder, CO | jewellcommajared@gmail.com | github.com/yairdyule 
+%
+% \end{center}
+
+\begin{flushleft}
+  {\large \textbf{Jared Jewell}} \hfill {jewellcommajared@gmail.com}
 
   \vspace{1mm}
 
-  Boulder, CO | jewellcommajared@gmail.com | github.com/yairdyule 
+{2950 Bixby Lane Apt. E305} \hfill {\includegraphics[align=c, scale=0.0125]{gh}}: github.com/yairdyule
 
-\end{center}
+  \vspace{.8mm}
 
-% \begin{flushleft}
-%   {\Large \textbf{Jared Jewell}} \hfill {jewellcommajared@gmail.com}
-% 
-%   \vspace{1mm}
-% 
-% {2950 Bixby Lane Apt. E305} \hfill {\includegraphics[align=c, scale=0.0125]{gh}}: github.com/yairdyule
-% 
-%   \vspace{.8mm}
-% 
-%   {Boulder, CO 80303} \hfill {(727)-459-4422}
-% \end{flushleft}
+  {Boulder, CO 80303} \hfill {(727)-459-4422}
+\end{flushleft}
 
 \vspace{-6mm}
+
+
+
+\begin{flushleft}
+
+  \hrulefill \quad {\large \textbf{Work Experience}} \quad \hrulefill
+
+  \vspace{2mm}
+
+  % LBX
+  {\textbf{Software Engineer}}, \textit{Lunchbox Technologies}\hfill August 2022 - Present
+  \vspace{-2mm}
+  \begin{itemize} \setlength\itemsep{-0.3em}
+      \item Collaboratively maintain client-facing React codebase, promptly solving problems faced by over 100 clients.
+      \item Designing and constructing a client-facing customer loyalty dashboard in RemixJS. 
+      \item Participate in engineering discussions concerning the scoping of API endpoints, UI/UX design, and project architecture.
+      \item Communicate with cross-departmental stakeholders regarding timeframe, scope, and resolution status of change requests.
+      \item Regularly solicit and participate in code reviews with senior engineers.
+      % \item Create technical design documents used by dozens of software engineers. % meh
+  \end{itemize}
+
+  % Algo/DS TA 
+  {\textbf{Teaching Assistant - Data Structures \& Algorithms}}, \textit{U.C. Boulder}\hfill Jan. 2021 - May 2021
+  \vspace{-2mm}
+  \begin{itemize} \setlength\itemsep{-0.3em}
+    \item Designed, prepared, and delivered weekly lectures to over 30 accelerated first-year students on various data structures including Hash Tables, Binary Search Trees, and Min-Max Heaps. %various data structures and their implementations in C++.
+    \item Provided support for student comprehension of various topics, including algorithmic time \& space complexity, dynamic programming, graph traversal methods, and other algorithmic strategies.
+  \end{itemize}
+
+\end{flushleft}
+
+\vspace{-8mm}
+
+
+\begin{flushleft}
+
+  \hrulefill \quad {\large \textbf{Project Experience}} \quad \hrulefill
+
+  \vspace{2mm}
+   
+  {\textbf{Full-stack Developer - SendIt}} 
+
+  \textit{Typescript, React/Remix, Prisma}
+
+  \vspace{-2mm}
+
+  \begin{itemize} \setlength\itemsep{-0.3em}
+    \item Full-stack social media web application, leveraging Spotify's API to unite music listeners and facilitate music-sharing between friends.
+    \item Utilizes various OAuth2 authorization flows to safely access sensitive user information.
+  \end{itemize}
+
+  {\textbf{Developer - Cirgraydian}} \hfill Jan. 2021
+  \vspace{-2mm}
+  \begin{itemize} \setlength\itemsep{-0.3em}
+    \item Python program to automatically enable a grayscale color filter on macOS, using pyAutoGui.
+    \item Reduces circadian rhythm disruption and eye strain from blue light exposure in the evening.
+  \end{itemize}
+
+\end{flushleft}
+
+
+% technical skills
+\begin{flushleft}
+  \hrulefill \quad {\large \textbf{Technical Skills}} \quad \hrulefill
+  {\vspace{-1mm}}
+  \begin{multicols}{2}
+    \begin{itemize} \setlength\itemsep{-0.3em}\setlength\columnseprule{10pt}
+      \item {Typescript, C++, Python, Go, Lua}.
+      \item {Node, Express, Nestjs, Prisma}.
+      \item {React, Remix, Nextjs}.
+      \item {SQL, NoSQL databases}.
+      \item {Heroku, AWS, Vercel, Fly.IO}. 
+      \item {Cypress, Jest, ViTest}.
+      \item {CircleCI, Husky}.
+      \item {Git}.
+      % \item LaTeX.
+      % \item (Neo)vim. % lmfao
+    \end{itemize}  
+  \end{multicols}
+\end{flushleft} 
 
 % education
 \begin{flushleft}
@@ -60,106 +140,13 @@
 
   \begin{itemize} \setlength\itemsep{-0.3em}
     \item {\textbf{Dean's list  | }CU Boulder} 
-      \hfill Awarded Fall 2020, Spring 2021
-    \item {\textbf{Chancellor's Achievement Scholarship  | }CU Boulder} 
-      \hfill Awarded Fall 2018
+      \hfill Awarded Fall 2020 through Spring 2022
   \end{itemize}
 
 \end{flushleft}
 
 
 
-% technical skills
-% don't think this is a great format for this section
-\begin{flushleft}
-% \vspace{1mm}
-  \hrulefill \quad {\large \textbf{Technical Skills}} \quad \hrulefill
-  {\vspace{-1mm}}
-  \begin{multicols}{2}
-    \begin{itemize} \setlength\itemsep{-0.3em}\setlength\columnseprule{10pt}
-      \item Javascript, C++, Python, Go, Lua.
-      \item SQL, NoSQL databases.
-      \item Git Version Control System.
-      \item Cloud-hosting services: Heroku, AWS. 
-      \item Unit-testing frameworks (Mocha, Chai).
-      \item React, Nextjs.
-      \item Node and Express.
-      % \item LaTeX.
-      \item (Neo)vim.
-    \end{itemize}  
-  \end{multicols}
-\end{flushleft} 
-
-\vspace{-5mm}
-
-% work experience
-\begin{flushleft}
-  \hrulefill \quad {\large \textbf{Work Experience}} \quad \hrulefill
-  \vspace{2mm}
-
-  % Algo CA 
-  {\textbf{Course Assistant — Algorithms}}, \textit{University of Colorado Boulder}\hfill Jan. 2021 - May 2021
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Provided support for student comprehension of various topics, including algorithmic time \& space complexity, dynamic programming, graph traversal methods, and other algorithmic strategies.
-  \item Flexibly adapted to the demands of a challenging remote environment by holding remote office hours to help students grasp complex topics.   
-\end{itemize}
-
-  \vspace{-1mm}
-
-  % DS TA 
-  {\textbf{Teaching Assistant — Data Structures}}, \textit{University of Colorado Boulder}  \hfill Aug. 2020 - Dec. 2020
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Designed, prepared, and delivered weekly lectures to over 30 accelerated, first-year students on various data structures including Hash Tables, Binary Search Trees, and Min-Max Heaps. %various data structures and their implementations in C++.
-
-    % fix fix fix
-    \item Adapted lecture modalities  to adhere to changing university guidelines during the pandemic.
-    \item Dialogued with senior lecturer to mitigate the difficulties inherent to a remote learning environment.
-  \end{itemize}
-
-  \vspace{-1mm}
-
-  % DS CA 
-  {\textbf{Course Assistant — Data Structures}}, \textit{University of Colorado Boulder} \hfill Jan. 2020 - May 2020
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Hosted individual and group office hours to encourage a thorough comprehension of data structures.
-    \item Remained in constant dialogue with senior instructors to help gauge student comprehension.
-  \end{itemize}
-\end{flushleft}
-
-
-\begin{flushleft}
-
-\hrulefill \quad {\large \textbf{Project Experience}} \quad \hrulefill
-
-\vspace{2mm}
- 
-{\textbf{Full-stack Developer — Vynilla}} \hfill Jan. 2021 - Present
-
-% \vspace{-2mm}
-% 
-% \begin{flushleft}
-% Full-stack social media web application which utilizes Spotify's API to unite music listeners and facilitate music-sharing between friends.
-% \end{flushleft}
-
-% \vspace{-7mm}
-\vspace{-3mm}
-
-\begin{itemize} \setlength\itemsep{-0.3em}
-  \item Full-stack social media web application which utilizes Spotify's API to unite music listeners and facilitate music-sharing between friends.
-  \item Employs OAuth2 authorization flows to access sensitive user information.
-  \item Built with MySQL, Node, Express, and Handlebars.
-\end{itemize}
-
-{\textbf{Developer — Cirgraydian}} \hfill Jan. 2021
-\vspace{-2mm}
-\begin{itemize} \setlength\itemsep{-0.3em}
-  \item Python program to automatically enable a grayscale color filter on macOS, using pyAutoGui.
-  \item Reduces circadian rhythm disruption and eye strain from blue light exposure in the evening.
-\end{itemize}
-
-\end{flushleft}
+\vspace{-6mm}
 
 \end{document}
