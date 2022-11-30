@@ -1,0 +1,24 @@
+\newenvironment{divider}[1][Subsection]
+{\begin{flushleft} \hrulefill \quad {\large \textbf{#1}} \quad \hrulefill \vspace{2mm}
+
+}
+{ \end{flushleft} }
+
+\newenvironment{ul}[1][-0.3em]
+{ \begin{itemize} \setlength\itemsep{#1} }
+{ \end{itemize} }
+
+\newcommand{\position}[3]{\textbf{#1}, \textit{#2}\hfill #3}
+\newcommand{\li}[1]{\item #1}
+
+\newenvironment{pridepoint}[3]
+{
+  \position{#1}{#2}{#3}
+
+  \vspace{-3mm}
+  \begin{ul}
+
+}
+{
+  \end{ul}
+}

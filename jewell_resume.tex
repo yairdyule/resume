@@ -1,14 +1,5 @@
-\input{glyphtounicode}
-\pdfgentounicode=1
-\documentclass[12pt]{article}
-
-\usepackage[top=.5in,bottom=.5in,left=.5in,right=.5in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{tgpagella}
-\usepackage{multicol}
-\usepackage{setspace}
-\usepackage{graphbox} %loads graphicx package
-\graphicspath{ {./} }
+\input{boilerplate}
+\input{utils}
 
 % top matter
 \begin{document}
@@ -16,126 +7,73 @@
 % no pg numbers
 \thispagestyle{empty}
     
-% \begin{center}
-%   {\Large \textbf{Jared Jewell}}
-%
-%   \vspace{1mm}
-%
-%   Boulder, CO | jewellcommajared@gmail.com | github.com/yairdyule 
-%
-% \end{center}
-
 \begin{flushleft}
   {\large \textbf{Jared Jewell}} \hfill {jewellcommajared@gmail.com}
 
-  \vspace{1mm}
-
-{2950 Bixby Lane Apt. E305} \hfill {\includegraphics[align=c, scale=0.0125]{gh}}: github.com/yairdyule
-
-  \vspace{.8mm}
+  {2950 Bixby Lane Apt. E305} \hfill {\includegraphics[align=c, scale=0.0125]{gh}}: github.com/yairdyule
 
   {Boulder, CO 80303} \hfill {(727)-459-4422}
 \end{flushleft}
 
 \vspace{-6mm}
 
-
-
-\begin{flushleft}
-
-  \hrulefill \quad {\large \textbf{Professional Experience}} \quad \hrulefill
-
-  \vspace{2mm}
-
-  % LBX
-  {\textbf{Software Engineer}}, \textit{Lunchbox Technologies}\hfill Aug. 2022 - Present
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-      \item Maintaining client-facing React application, promptly solving problems faced by over 100 clients.
-      \item Identifying the need for and subsequently implementing thoroughly-tested REST API endpoints.
-      \item Designing and constructing a greenfield, client-facing dashboard in RemixJS. 
-      \item Contributing to the maintenance of legacy Python backend and microservices.
-      \item Communicating with project stakeholders regarding status and feasibility of feature requests.
-      % \item Participating in engineering discussions concerning the scoping of API endpoints, UI/UX design, and project architecture.
-      % \item Create technical design documents used by dozens of software engineers. % meh
-  \end{itemize}
-
-  % LBX intern
-  {\textbf{Software Engineering Intern}}, \textit{Lunchbox Technologies}\hfill May 2022 - Aug. 2022
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Regularly solicited and participated in code reviews with senior engineers.
-    \item Created technical design documents used by dozens of engineers. % meh
-    \item Participated in engineering discussions concerning the scoping of API endpoints, UI/UX design, and project architecture.
-  \end{itemize}
-
-
-  % Algo/DS TA 
-  {\textbf{Teaching Assistant - Data Structures \& Algorithms}}, \textit{U.C. Boulder}\hfill Jan. 2021 - May 2021
-  \vspace{-2mm}
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Designed, prepared, and delivered weekly lectures to over 30 accelerated first-year students on various data structures including Hash Tables, Binary Search Trees, and Min-Max Heaps. %various data structures and their implementations in C++.
-  \end{itemize}
-
-\end{flushleft}
-
-\vspace{-8mm}
-
-
-\begin{flushleft}
-
-  \hrulefill \quad {\large \textbf{Projects}} \quad \hrulefill
-
-  \vspace{2mm}
-   
-  {\textbf{SendIt}} - \textit{Typescript, React/Remix, Prisma}
-
-  \vspace{-3mm}
-      
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Full-stack social media web application, integrated with the Spotify Web API to unite music listeners and facilitate the sharing of music between friends.
-    \item Implements both Authorization Code and Client Credentials authorization flows to safely access sensitive user information when necessary.
-  \end{itemize}
-
-  {\textbf{Shuffling Extravaganza}} - \textit{Typescript, React, Express}
-
-  \vspace{-3mm}
-      
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item Simple web application, allowing users to alphabetize or randomize the songs in a given playlist.
-    \item Implements the Authorization Code authorization flow to securely access and modify user content via the Spotify Web API.
-  \end{itemize}
-
-\end{flushleft}
-
-
-% technical skills
-\begin{flushleft}
-  \hrulefill \quad {\large \textbf{Technical Skills}} \quad \hrulefill
-  {\vspace{-1mm}}
+\begin{divider}[Professional Experience]
+  \begin{pridepoint}
+    {Software Engineer}
+    {Lunchbox Technologies}
+    {Aug. 2022 - Present}
+    \li Maintaining client-facing React application, promptly solving problems faced by over 100 clients.
+    \li Identifying the need for and subsequently implementing thoroughly-tested REST API endpoints.
+    \li Designing and constructing a greenfield, client-facing dashboard in RemixJS. 
+    \li Contributing to the maintenance of legacy Python backend and microservices.
+    \li Communicating with project stakeholders regarding status and feasibility of feature requests.
+  \end{pridepoint}
+  \begin{pridepoint}
+    {Software Engineering Intern}
+    {Lunchbox Technologies}
+    {May. 2022 - Aug. 2022}
+    \li Regularly solicited and participated in code reviews with senior engineers.
+    \li Created technical design documents used by several engineers. % meh
+    \li Aided engineers in the resolution of more than two dozen breaking issues.% meh
+    \li Participated in engineering discussions concerning the scoping of API endpoints, UI/UX design, and project architecture.
+  \end{pridepoint}
+  \begin{pridepoint}
+    {Teaching Assistant - Data Structures \& Algorithms}
+    {U.C. Boulder}
+    {Jan. 2021 - May 2021}
+    \li Designed, prepared, and delivered weekly lectures to over 30 accelerated first-year students on various data structures including Hash Tables, Binary Search Trees, and Min-Max Heaps. %various data structures and their implementations in C++.
+  \end{pridepoint}
+\end{divider}
+\begin{divider}[Projects]
+  \begin{pridepoint}
+    {SendIt}
+    {Typescript, React/Remix, Prisma}
+    {}
+    \li Full-stack social media web application, integrated with the Spotify Web API to unite music listeners and facilitate the sharing of music between friends.
+    \li Implements both Authorization Code and Client Credentials authorization flows to safely access sensitive user information when necessary.
+  \end{pridepoint}
+\end{divider}
+\begin{divider}[Technical Skills]
+  \vspace{-4mm}
   \begin{multicols}{2}
     \begin{itemize} \setlength\itemsep{-0.3em}\setlength\columnseprule{10pt}
-      \item {Typescript, Python, C++, Go, Lua}.
-      \item {Node, Express, Nestjs, Prisma}.
-      \item {React, Nextjs, Remix}.
-      \item {Tailwind, SCSS}. 
-      \item {SQL, NoSQL database administration}.
-      \item {Cypress, Jest, ViTest}.
-      \item {CircleCI, Husky}.
-      \item {Git}.
-      % \item LaTeX.
-      % \item (Neo)vim. % lmfao
+      \li {Typescript, Python, C++, Go, Lua}.
+      \li {Node, Express, Nestjs, Prisma}.
+      \li {React, Nextjs, Remix}.
+      \li {Tailwind, SCSS}. 
+      \li {SQL, NoSQL database administration}.
+      \li {Cypress, Jest, ViTest}.
+      \li {CircleCI, Husky}.
+      \li {Git}.
+      % \li LaTeX.
+      % \li (Neo)vim. % lmfao
     \end{itemize}  
   \end{multicols}
-\end{flushleft} 
+\end{divider} 
+\begin{divider}[Education]
 
-% education
-\begin{flushleft}
-  \hrulefill \quad {\large \textbf{Education}} \quad \hrulefill
+  {\textbf{University of Colorado Boulder}} \hfill {Major Specific GPA: \textbf{3.56}}
 
-  \vspace{1mm}
-
-  {\textbf{University of Colorado Boulder} }\hfill { \quad Major Specific GPA: \textbf{3.56}}
   \vspace{.5mm}
 
   {\quad \textbf{B.A. Computer Science}} \hfill {Cumulative GPA: \textbf{3.67}}
@@ -148,15 +86,10 @@
 
   {\vspace{-4.3mm}}
 
-  \begin{itemize} \setlength\itemsep{-0.3em}
-    \item {\textbf{Dean's list  | }CU Boulder} 
+  \begin{ul}
+    \li {\textbf{Dean's list  | }CU Boulder} 
       \hfill Awarded Fall 2020 through Spring 2022
-  \end{itemize}
-
-\end{flushleft}
-
-
-
-\vspace{-6mm}
+  \end{ul}
+\end{divider}
 
 \end{document}
